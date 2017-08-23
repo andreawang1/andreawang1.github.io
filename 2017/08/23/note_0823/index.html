@@ -5,17 +5,17 @@
   
   <title>20170823研習日誌 | Andrea&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="實測TurtleBot##Testing the bumper sensor1$ rostopic echo /mobile_base/events/bumper 結果12$ state: 1$ bumper: 1 ##Testing the cliff sensor 操作介紹[TurtleBot]http://edu.gaitech.hk/turtlebot/turtlebot-first-te">
+  <meta name="description" content="實測TurtleBotTesting the bumper sensor保險桿碰撞測試1$ rostopic echo /mobile_base/events/bumper 結果12$ state: 1$ bumper: 1 Testing the cliff sensor懸崖感測輸入1rostopic echo /mobile_base/events/cliff 結果12345state: 0s">
 <meta property="og:type" content="article">
 <meta property="og:title" content="20170823研習日誌">
 <meta property="og:url" content="http://yoursite.com/2017/08/23/note_0823/index.html">
 <meta property="og:site_name" content="Andrea&#39;s Blog">
-<meta property="og:description" content="實測TurtleBot##Testing the bumper sensor1$ rostopic echo /mobile_base/events/bumper 結果12$ state: 1$ bumper: 1 ##Testing the cliff sensor 操作介紹[TurtleBot]http://edu.gaitech.hk/turtlebot/turtlebot-first-te">
+<meta property="og:description" content="實測TurtleBotTesting the bumper sensor保險桿碰撞測試1$ rostopic echo /mobile_base/events/bumper 結果12$ state: 1$ bumper: 1 Testing the cliff sensor懸崖感測輸入1rostopic echo /mobile_base/events/cliff 結果12345state: 0s">
 <meta property="og:locale" content="chinese">
-<meta property="og:updated_time" content="2017-08-23T08:23:01.349Z">
+<meta property="og:updated_time" content="2017-08-23T08:27:46.854Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="20170823研習日誌">
-<meta name="twitter:description" content="實測TurtleBot##Testing the bumper sensor1$ rostopic echo /mobile_base/events/bumper 結果12$ state: 1$ bumper: 1 ##Testing the cliff sensor 操作介紹[TurtleBot]http://edu.gaitech.hk/turtlebot/turtlebot-first-te">
+<meta name="twitter:description" content="實測TurtleBotTesting the bumper sensor保險桿碰撞測試1$ rostopic echo /mobile_base/events/bumper 結果12$ state: 1$ bumper: 1 Testing the cliff sensor懸崖感測輸入1rostopic echo /mobile_base/events/cliff 結果12345state: 0s">
   
     <link rel="alternate" href="/atom.xml" title="Andrea&#39;s Blog" type="application/atom+xml">
   
@@ -90,15 +90,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="實測TurtleBot"><a href="#實測TurtleBot" class="headerlink" title="實測TurtleBot"></a>實測TurtleBot</h2><p>##Testing the bumper sensor<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ rostopic <span class="built_in">echo</span> /mobile_base/events/bumper</div></pre></td></tr></table></figure></p>
+        <h2 id="實測TurtleBot"><a href="#實測TurtleBot" class="headerlink" title="實測TurtleBot"></a>實測TurtleBot</h2><h2 id="Testing-the-bumper-sensor"><a href="#Testing-the-bumper-sensor" class="headerlink" title="Testing the bumper sensor"></a>Testing the bumper sensor</h2><h3 id="保險桿碰撞測試"><a href="#保險桿碰撞測試" class="headerlink" title="保險桿碰撞測試"></a>保險桿碰撞測試</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ rostopic <span class="built_in">echo</span> /mobile_base/events/bumper</div></pre></td></tr></table></figure>
 <p>結果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ state: 1</div><div class="line">$ bumper: 1</div></pre></td></tr></table></figure></p>
-<p>##Testing the cliff sensor</p>
+<h2 id="Testing-the-cliff-sensor"><a href="#Testing-the-cliff-sensor" class="headerlink" title="Testing the cliff sensor"></a>Testing the cliff sensor</h2><h3 id="懸崖感測"><a href="#懸崖感測" class="headerlink" title="懸崖感測"></a>懸崖感測</h3><p>輸入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rostopic echo /mobile_base/events/cliff</div></pre></td></tr></table></figure></p>
+<p>結果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">state: 0</div><div class="line">sensor: 0</div><div class="line">---------</div><div class="line">state: 0</div><div class="line">sensor: 0</div></pre></td></tr></table></figure></p>
+<p>表示沒有在懸崖邊</p>
 <p>操作介紹<br>[TurtleBot]<a href="http://edu.gaitech.hk/turtlebot/turtlebot-first-tests.html#testing-the-bumper-sensor" target="_blank" rel="external">http://edu.gaitech.hk/turtlebot/turtlebot-first-tests.html#testing-the-bumper-sensor</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/23/note_0823/" data-id="cj6or5bjf00018ciyeg5pk23b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/08/23/note_0823/" data-id="cj6orb92y000094iyude3utms" class="article-share-link">Share</a>
       
       
     </footer>
